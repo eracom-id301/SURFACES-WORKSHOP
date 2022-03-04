@@ -32,18 +32,17 @@
     }
   </style>
 
-  <body style="margin: 0px; overflow: hidden" >
-    <!-- minimal loader shown until image descriptors are loaded -->
-
-    <div class="arjs-loader"  >
-      
-    <audio id="mediation" autoplay>
-      <source
-        src="/assets/source_audio/Annonce_mixage.mp3"
-        type="audio/mpeg"
-      />
+  <body style="margin: 0px; overflow: hidden" onclick="playSound();">
+    <audio id="mediation" autoplay loop>
+      <source src="/assets/source_audio/Annonce_mixage.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
     </audio>
-    <a-scene 
+
+    <!-- minimal loader shown until image descriptors are loaded -->
+    <div class="arjs-loader">
+      <div>Scanner la carte</div>
+    </div>
+    <a-scene
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
@@ -58,7 +57,7 @@
         smoothTolerance="1"
         smoothThreshold="30"
       >
-        <a-entity 
+        <a-entity
           gltf-model="/assets/animation_v2.gltf"
           animation-mixer
           scale="50 50 50"
@@ -76,6 +75,8 @@
         </a-entity>
       </a-nft>
       <a-entity camera></a-entity>
+
+      <!-- ... -->
     </a-scene>
   </body>
 </html>
