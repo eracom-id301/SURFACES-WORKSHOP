@@ -32,7 +32,7 @@
     }
   </style>
 
-  <body style="margin: 0px; overflow: hidden" onclick="playSound();">
+  <body style="margin: 0px; overflow: hidden" >
     <!-- minimal loader shown until image descriptors are loaded -->
 
     <div class="arjs-loader"  >
@@ -43,7 +43,7 @@
         type="audio/mpeg"
       />
     </audio>
-    <a-scene 
+    <a-scene onclick="playSound();"
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
