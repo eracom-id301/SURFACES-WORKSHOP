@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Surfaces_AR</title>
   </head>
   <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
@@ -35,15 +35,15 @@
   <body style="margin: 0px; overflow: hidden" onclick="playSound();">
     <audio id="mediation" autoplay loop>
       <source
-        src="https://eracom-id301.github.io/SURFACES-WORKSHOP//assets/source_audio/Annonce_mixage.mp3"
+        src="https://eracom-id301.github.io/SURFACES-WORKSHOP//source_audio/Annonce_mixage.mp3"
         type="audio/mpeg"
       />
-      Your browser does not support the audio element.
     </audio>
 
     <!-- minimal loader shown until image descriptors are loaded -->
     <div class="arjs-loader">
       <div>Scanner la carte</div>
+      <div>Toucher l'écran pour activer l'audio</div>
     </div>
     <a-scene
       vr-mode-ui="enabled: false;"
@@ -56,16 +56,16 @@
         type="nft"
         url="https://eracom-id301.github.io/SURFACES-WORKSHOP//assets/verso"
         smooth="true"
-        smoothCount="30"
-        smoothTolerance="1"
-        smoothThreshold="30"
+        smoothCount="40"
+        smoothTolerance="0.1"
+        smoothThreshold="40"
       >
         <a-entity
           gltf-model="https://eracom-id301.github.io/SURFACES-WORKSHOP//assets/animation_v2.gltf"
           animation-mixer
           scale="50 50 50"
           rotation="-90 180 0 "
-          position="100 0 -400"
+          position="200 100 -400"
         >
           <a-light
             type="directional"
