@@ -43,7 +43,7 @@
         type="audio/mpeg"
       />
     </audio>
-    <a-scene
+    <a-scene onclick="playSound();"
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
@@ -58,7 +58,7 @@
         smoothTolerance="1"
         smoothThreshold="30"
       >
-        <a-entity onclick="playSound();"
+        <a-entity 
           gltf-model="https://eracom-id301.github.io/SURFACES-WORKSHOP/assets/animation_v2.gltf"
           animation-mixer
           scale="50 50 50"
