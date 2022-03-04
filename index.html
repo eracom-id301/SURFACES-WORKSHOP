@@ -34,16 +34,16 @@
 
   <body style="margin: 0px; overflow: hidden" onclick="playSound();">
     <!-- minimal loader shown until image descriptors are loaded -->
+
+    <div class="arjs-loader">
+      <div>Scanner la carte</div>
+    </div>
     <audio id="mediation" autoplay>
       <source
         src="https://eracom-id301.github.io/SURFACES-WORKSHOP/assets/source_audio/Annonce_mixage.mp3"
         type="audio/mpeg"
       />
     </audio>
-    <div class="arjs-loader">
-      <div>Scanner la carte</div>
-    </div>
-
     <a-scene
       vr-mode-ui="enabled: false;"
       renderer="logarithmicDepthBuffer: true;"
